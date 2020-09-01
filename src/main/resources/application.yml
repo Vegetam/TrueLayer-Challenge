@@ -1,0 +1,14 @@
+shakespeare:
+  api:
+    url: http://api.funtranslations.com/translate/shakespeare.json
+pokemon:
+  api:
+    url: https://pokeapi.co/api/v2/pokemon
+springdoc:
+  swagger-ui:
+    path: /pokemon/api-docs-ui
+server:
+  error:
+    whitelabel:
+      enabled: false
+    include-stacktrace: always
