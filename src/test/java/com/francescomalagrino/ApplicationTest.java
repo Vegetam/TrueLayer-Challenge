@@ -1,10 +1,10 @@
-package com.francescomalagrino.pokemon;
+package com.francescomalagrino;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TrueLayerChallengeApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {
