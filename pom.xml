@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.francescomalagrino</groupId>
 	<artifactId>pokemon-shakespeare-description</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>TrueLayerChallenge</name>
 	<description>pokemon-shakespeare-description</description>
 
