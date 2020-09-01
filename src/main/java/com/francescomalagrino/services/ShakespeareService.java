@@ -15,12 +15,14 @@ public class ShakespeareService {
     this.shakespeareApiClient = shakespeareApiClient;
   }
 
-  public String getTranslatedDescription(String description) {
+  public String getTranslatedDescription(String description) throws Exception{
     try {
       return shakespeareApiClient.getTranslation(description).getContents().getTranslated();
     } catch (Exception e) {
       // in production code we might want a specific exception handler / message etc.
-      throw new CustomException("Error : " + shakespeareApiClient.getTranslation(description).getContents().getTranslated(), e);
+     // throw new CustomException("Error : " + shakespeareApiClient.getTranslation(description).getContents().getTranslated(), e);
+    	System.out.println(e.getMessage());
     }
+	return description;
   }
 }

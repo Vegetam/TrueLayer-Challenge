@@ -18,7 +18,7 @@ public class PokemonService {
     this.pokemonApiClient = pokemonApiClient;
   }
 
-  public String getPokemonDescriptionInEnglish(String pokemonName) {
+  public String getPokemonDescriptionInEnglish(String pokemonName) throws Exception{
     // I will makes two api calls for each pokemon we want to retrieve this is for test purpose not for a production software
     try {
       Pokemon pokemon = pokemonApiClient.getPokemon(pokemonName);
@@ -32,8 +32,9 @@ public class PokemonService {
           .orElseThrow(Exception::new);
     } catch (Exception e) {
       // in production i can make a better Custom Exception with better message
-      throw new CustomException("errore : ", e);
+      System.out.println(e.getMessage());
     }
+	return pokemonName;
   }
 
   private String removeSpecialChars(String original) {

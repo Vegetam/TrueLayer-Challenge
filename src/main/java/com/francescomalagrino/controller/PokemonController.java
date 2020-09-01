@@ -25,7 +25,7 @@ public class PokemonController {
     }
 
     @GetMapping("/{pokemonName}")
-    public ShakespearePokemon pokemon(@PathVariable String pokemonName) {
+    public ShakespearePokemon pokemon(@PathVariable String pokemonName) throws Exception {
         String pokemonDescription = pokemonService.getPokemonDescriptionInEnglish(pokemonName);
         String translatedDescription = shakespeareService.getTranslatedDescription(pokemonDescription);
         return new ShakespearePokemon(pokemonName, translatedDescription);
