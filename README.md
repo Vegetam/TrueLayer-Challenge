@@ -8,7 +8,7 @@ Installed: [Docker](https://www.docker.com/), [Java 1.8 or 1.11](https://www.ora
 
 ##### Clone source code from git
 ```
-$  git clone https://github.com/.
+$  git clone https://github.com/Vegetam/TrueLayer-Challenge  .
 ```
 
 ### Run with docker-compose 
