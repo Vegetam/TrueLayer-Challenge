@@ -2,8 +2,9 @@ package com.francescomalagrino.clients.pokemon;
 
 import static java.lang.String.*;
 
-import com.pokemonshakespeare.clients.pokemon.model.Pokemon;
-import com.pokemonshakespeare.clients.pokemon.model.Species;
+
+import com.francescomalagrino.clients.pokemon.model.Pokemon;
+import com.francescomalagrino.clients.pokemon.model.Species;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -29,3 +30,5 @@ public class PokemonApiClient {
   public Species getSpeciesFor(Pokemon pokemon) {
     return restTemplate.getForObject(pokemon.getSpecies().getUrl(), Species.class);
   }
+
+}
