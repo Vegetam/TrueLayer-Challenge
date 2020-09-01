@@ -2,7 +2,6 @@ package com.francescomalagrino.clients.pokemon;
 
 import static java.lang.String.*;
 
-
 import com.francescomalagrino.clients.pokemon.model.Pokemon;
 import com.francescomalagrino.clients.pokemon.model.Species;
 import org.springframework.beans.factory.annotation.Autowired;

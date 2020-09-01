@@ -1,6 +1,9 @@
 package com.francescomalagrino.clients.pokemon.model;
 
-public class Pokemon {
+import com.francescomalagrino.clients.pokemon.model.Pokemon.Species;
+
+public class Pokemon 
+{
 
 	  private Species species;
 
@@ -35,5 +38,4 @@ public class Pokemon {
 	      return url;
 	    }
 	  }
-	  
 }

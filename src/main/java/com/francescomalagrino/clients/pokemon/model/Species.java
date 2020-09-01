@@ -16,5 +16,6 @@ public class Species {
     this.descriptions = descriptions;
   }
 
- 
+  public Species() {
+  }
 }

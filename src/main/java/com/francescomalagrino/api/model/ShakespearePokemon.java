@@ -2,6 +2,8 @@ package com.francescomalagrino.api.model;
 
 import java.util.Objects;
 
+import com.francescomalagrino.api.model.ShakespearePokemon;
+
 public class ShakespearePokemon {
 
   private String name;
