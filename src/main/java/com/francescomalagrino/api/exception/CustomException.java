@@ -1,4 +1,4 @@
-package com.francescomalagrino.api.exxception;
+package com.francescomalagrino.api.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
