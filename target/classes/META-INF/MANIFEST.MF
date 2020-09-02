@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Build-Jdk-Spec: 11
 Implementation-Title: TrueLayerChallenge
-Implementation-Version: 0.0.1-SNAPSHOT
-Main-Class: com.francescomalagino.Application
+Implementation-Version: 0.0.1
+Main-Class: com.francescomalagrino.Application
 Created-By: Maven Integration for Eclipse
 
