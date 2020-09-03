@@ -35,6 +35,8 @@ mvn integration-test
 http://localhost:8080/pokemon/api-docs-ui
 
 and under PokemonName use charizard or blastoise
+
+Note that is case sensitive so if you wrote Ditto you won't receive any correct description
 ```
 
 the response should be:
