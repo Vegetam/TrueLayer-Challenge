@@ -41,18 +41,23 @@ the response should be:
 ```
 {"name":"charizard","description":"Charizard flies 'round the sky in search of powerful opponents. It breathes fire of such most wondrous heat yond 't melts aught. However 't nev'r turns its fiery breath on any opponent weaker than itself."}
 ```
+### Run without docker-compose
 
-##### Stop Docker Container:
+##### Build Docker image
 ```
-docker-compose down
+docker build --tag fm-pokemon-description:1.0 .
 ```
+
+>Note:if you run this command for first time it will take some time in order to download base image from [DockerHub](https://hub.docker.com/)
 
 ##### Run Docker Container
 ```
-$ docker run -p 8080:8080 -it --rm truelayerchallenge_fm-pokemon-shakespeare-description
+docker run -p 8080:8080 --rm fm-pokemon-description:1.0
 ```
 
 #####  Stop Docker Container:
 ```
-docker stop `docker container ls | grep "truelayerchallenge_fm-pokemon-shakespeare-description:*" | awk '{ print $1 }'`
+docker stop `docker container ls | grep "fm-pokemon-description:1.0:*" | awk '{ print $1 }'`
+```
+
 ```
